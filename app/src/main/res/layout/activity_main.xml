@@ -15,16 +15,18 @@
         android:padding="@dimen/inner_frame_layout_padding"
         app:boxedEdges="all">
 
-        <TextView
-            android:id="@+id/text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/hello_world" />
+<!--        <TextView-->
+<!--            android:id="@+id/text"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/hello_world" />-->
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:gravity="center"
+            >
 
             <EditText
                 android:id="@+id/editTextTextPersonName"
@@ -32,20 +34,22 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="Name" />
+                android:text="jonathan.lam@ecobee.com"
+                />
 
             <EditText
                 android:id="@+id/editTextTextPassword"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:hint="password"/>
 
             <Button
                 android:id="@+id/button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Button" />
+                android:text="Login" />
         </LinearLayout>
 
     </FrameLayout>
